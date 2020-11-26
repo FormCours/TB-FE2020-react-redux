@@ -42,7 +42,7 @@ export const weatherSearch = (city) => {
             dispatch(weatherFetch(weather));
         }).catch(() => {
             // Déclancher l'action 'FETCH'
-            dispatch(weatherFetch(null));
+            dispatch(weatherFetch([]));
         })
 
     }

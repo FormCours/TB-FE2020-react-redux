@@ -14,12 +14,11 @@ const weatherReducer = (state= initialState, action) => {
                 weather: null,
                 onLoading: true
             };
-        case WEATHER_FETCH: {
+        case WEATHER_FETCH:
             return {
                 weather: action.payload,
                 onLoading: false
-            }
-        }
+            };
         default:
             return state;
     }
